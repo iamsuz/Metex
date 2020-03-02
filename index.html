@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mint</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<style>
+		body{
+			padding: 10em;
+		}
+		.block{
+			box-shadow: 0px 0px 40px 0px grey;
+			padding: 1em;
+		}
+	</style>
+</head>
+<body>
+	<section class="main-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-1 block">
+					<h4>Contract</h4>
+					<a href="https://kovan.etherscan.io/address/0x4ab74c6c9a2cda93570caf03cbb9a87112a839fd">[0x4Ab74C6C9a2cDa93570cAF03CBb9A87112a839Fd]</a>
+					<br>
+					<br>
+					<form action="/mintTokens" method="POST">
+						<input type="hidden" name="contract_address" value="0x4Ab74C6C9a2cDa93570cAF03CBb9A87112a839Fd">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="mintAmount" class="form-control" placeholder="Mint Amount">
+								</div>
+								<div class="col-md-6">
+									<input type="submit" class="btn btn-primary btn-block" value="Mint Amount">
+								</div>
+							</div><br>
+						</div>
+					</form>
+					<form action="/redeemToken" method="POST">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="redeemAmount" class="form-control" placeholder="Redeem Amount">
+								</div>
+								<div class="col-md-6">
+									<button class="btn btn-primary btn-block">Redeem Amount</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-4 col-md-offset-2 block">
+					<h3>Contract 2</h3>
+					<form>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="mintAmount" class="form-control" placeholder="Mint Amount">
+								</div>
+								<div class="col-md-6">
+									<button class="btn btn-primary btn-block">Mint Amount</button>
+								</div>
+							</div><br>
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="redeemAmount" class="form-control" placeholder="Redeem Amount">
+								</div>
+								<div class="col-md-6">
+									<button class="btn btn-primary btn-block">Redeem Amount</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<br><br><br><br>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-1 block">
+					<h3>Contract 3</h3>
+					<form>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="mintAmount" class="form-control" placeholder="Mint Amount">
+								</div>
+								<div class="col-md-6">
+									<button class="btn btn-primary btn-block">Mint Amount</button>
+								</div>
+							</div><br>
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="redeemAmount" class="form-control" placeholder="Redeem Amount">
+								</div>
+								<div class="col-md-6">
+									<button class="btn btn-primary btn-block">Redeem Amount</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-4 col-md-offset-2 block">
+					<h3>Contract 4</h3>
+					<form>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="mintAmount" class="form-control" placeholder="Mint Amount">
+								</div>
+								<div class="col-md-6">
+									<button class="btn btn-primary btn-block">Mint Amount</button>
+								</div>
+							</div><br>
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="redeemAmount" class="form-control" placeholder="Redeem Amount">
+								</div>
+								<div class="col-md-6">
+									<button class="btn btn-primary btn-block">Redeem Amount</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+	<script>
+		window.addEventListener('load', async () => {
+			console.log('inside');
+        	// Modern dapp browsers...
+        	if (window.ethereum) {
+        		window.web3 = new Web3(ethereum);
+        		try {
+        			console.log('inside');
+        			ethereum.autoRefreshOnNetworkChange = false;
+        			await ethereum.enable();
+        		}catch{
+        			console.log('User denied the access');
+        		}
+        	}else{
+        		console.log('browser does not support ethereum');
+        	}
+        });
+    </script>
+</body>
+</html>

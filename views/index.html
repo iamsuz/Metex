@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mint</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<style>
+		body{
+			padding: 10em;
+		}
+		.block{
+			box-shadow: 0px 0px 40px 0px grey;
+			padding: 1em;
+		}
+	</style>
+</head>
+<body>
+	<section class="main-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-1 block">
+					<h4>MetexGold1g</h4>
+					<a href="https://kovan.etherscan.io/address/0xc60a05280d3d668fe49c9a96871841c3ff6050ad">[0xc60a05280d3d668fe49c9a96871841c3ff6050ad]</a>
+					<br>
+					<br>
+					<form action="/mintTokens" name="mintTokens" method="POST">
+						<input type="hidden" name="contract_address" value="0xc60a05280d3d668fe49c9a96871841c3ff6050ad" >
+						<input type="hidden" name="uAddress" value="" class="uAddress">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="mintAmount" class="form-control" placeholder="Mint MXAU Tokens">
+								</div>
+								<div class="col-md-6">
+									<input type="submit" class="btn btn-primary btn-block" value="Mint Amount">
+								</div>
+							</div><br>
+						</div>
+					</form>
+					<form action="/redeemToken" name="redeemTokens" method="POST">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="redeemAmount" class="form-control" placeholder="Redeem MXAU Tokens">
+								</div>
+								<div class="col-md-6">
+									<input type="submit" class="btn btn-primary btn-block" value="Redeem Amount">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-4 col-md-offset-2 block">
+					<h4>MetexSilver10g</h4>
+					<a href="https://kovan.etherscan.io/address/0x00892525cda0f5b4d419a0b274064cae2bb81081">[0x00892525cda0f5b4d419a0b274064cae2bb81081]</a>
+					<br><br>
+					<form action="/mintTokens" name="mintTokens" method="POST">
+						<input type="hidden" name="contract_address" value="0x00892525cda0f5b4d419a0b274064cae2bb81081" >
+						<input type="hidden" name="uAddress" value="" class="uAddress">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="mintAmount" class="form-control" placeholder="Mint MXAG Tokens">
+								</div>
+								<div class="col-md-6">
+									<input type="submit" class="btn btn-primary btn-block" value="Mint Amount">
+								</div>
+							</div><br>
+						</div>
+					</form>
+					<form action="/redeemToken" name="redeemTokens" method="POST">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="redeemAmount" class="form-control" placeholder="Redeem MXAG Tokens">
+								</div>
+								<div class="col-md-6">
+									<input type="submit" class="btn btn-primary btn-block" value="Redeem Amount">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<br><br><br><br>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-1 block">
+					<h4>MetexPlatinum1g</h4>
+					<a href="https://kovan.etherscan.io/address/0x3a324255dc0727a2f96af0391916e38eb082694d">[0x3a324255dc0727a2f96af0391916e38eb082694d]</a>
+					<br><br>
+					<form action="/mintTokens" name="mintTokens" method="POST">
+						<input type="hidden" name="contract_address" value="0x3a324255dc0727a2f96af0391916e38eb082694d" >
+						<input type="hidden" name="uAddress" value="" class="uAddress">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="mintAmount" class="form-control" placeholder="Mint MXPT Tokens">
+								</div>
+								<div class="col-md-6">
+									<input type="submit" class="btn btn-primary btn-block" value="Mint Amount">
+								</div>
+							</div><br>
+						</div>
+					</form>
+					<form action="/redeemToken" name="redeemTokens" method="POST">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="redeemAmount" class="form-control" placeholder="Redeem MXPT Tokens">
+								</div>
+								<div class="col-md-6">
+									<input type="submit" class="btn btn-primary btn-block" value="Redeem Amount">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-4 col-md-offset-2 block">
+					<h4>MetexPalladium1g</h4>
+					<a href="https://kovan.etherscan.io/address/0x9d2649689d36b84a703eca4f8f4eef42e6f6c793">[0x9d2649689d36b84a703eca4f8f4eef42e6f6c793]</a>
+					<br><br>
+					<form action="/mintTokens" name="mintTokens" method="POST">
+						<input type="hidden" name="contract_address" value="0x9d2649689d36b84a703eca4f8f4eef42e6f6c793" >
+						<input type="hidden" name="uAddress" value="" class="uAddress">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="mintAmount" class="form-control" placeholder="Mint MXPD Tokens">
+								</div>
+								<div class="col-md-6">
+									<input type="submit" class="btn btn-primary btn-block" value="Mint Amount">
+								</div>
+							</div><br>
+						</div>
+					</form>
+					<form action="/redeemToken" name="redeemTokens" method="POST">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="integer" name="redeemAmount" class="form-control" placeholder="Redeem MXPD Tokens">
+								</div>
+								<div class="col-md-6">
+									<input type="submit" class="btn btn-primary btn-block" value="Redeem Amount">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+	<script>
+		window.addEventListener('load', async () => {
+			var abi = [{"inputs":[{"internalType":"string","name":"_name","type":"string"},{"internalType":"string","name":"_symbol","type":"string"},{"internalType":"address","name":"_admin","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_owner","type":"address"},{"indexed":true,"internalType":"address","name":"_spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"_value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"burner","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Burn","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_from","type":"address"},{"indexed":true,"internalType":"address","name":"_to","type":"address"},{"indexed":false,"internalType":"uint256","name":"_value","type":"uint256"}],"name":"Transfer","type":"event"},{"constant":true,"inputs":[],"name":"admin","outputs":[{"internalType":"address","name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"internalType":"address","name":"","type":"address"},{"internalType":"address","name":"","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"tokens","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"mint","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"redeem","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokens","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokens","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]
+
+        	// Modern dapp browsers...
+        	if (window.ethereum) {
+        		window.web3 = new Web3(ethereum);
+        		try {
+        			console.log('inside');
+        			ethereum.autoRefreshOnNetworkChange = false;
+        			await ethereum.enable();
+        			$('.uAddress').val(ethereum.selectedAddress);
+        			$('form[name=mintTokens]').on('submit',function (e) {
+        				e.preventDefault();
+        				var contractA = $(this.elements.contract_address).val();
+        				var amount = $(this.elements.mintAmount).val();
+        				amount = amount*10**18;
+        				var contract = new web3.eth.Contract(abi,contractA);
+        				new Promise((resolve,reject)=>{
+        					contract.methods.mint(amount.toString()).send({
+        						from:ethereum.selectedAddress
+        					}).on('confirmation',(confirmationCount)=>{
+        						resolve();
+        						location.reload();
+        					}).on('error',(error)=>{
+        						reject(error);
+        					})
+        				})
+        			});
+        			$('form[name=redeemTokens]').on('submit',function (e) {
+        				e.preventDefault();
+        				var contractA = $('input[name=contract_address]').val();
+        				var amount = $('input[name=redeemAmount]').val();
+        				amount = amount*10**18;
+        				var contract = new web3.eth.Contract(abi,contractA);
+        				new Promise((resolve,reject)=>{
+        					contract.methods.redeem(amount.toString()).send({
+        						from:ethereum.selectedAddress
+        					}).on('confirmation',(confirmationCount)=>{
+        						resolve();
+        						location.reload();
+        					}).on('error',(error)=>{
+        						reject(error);
+        					})
+        				})
+        			});
+        		}catch{
+        			console.log('User denied the access');
+        		}
+        	}else{
+        		console.log('browser does not support ethereum');
+        	}
+        });
+    </script>
+</body>
+</html>
