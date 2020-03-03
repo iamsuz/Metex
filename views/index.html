@@ -178,7 +178,7 @@
         				e.preventDefault();
         				var contractA = $(this.elements.contract_address).val();
         				var amount = $(this.elements.mintAmount).val();
-        				amount = amount*10**18;
+        				amount = web3.utils.toWei(amount.toString(),'ether');
         				var contract = new web3.eth.Contract(abi,contractA);
         				new Promise((resolve,reject)=>{
         					contract.methods.mint(amount.toString()).send({
@@ -195,7 +195,7 @@
         				e.preventDefault();
         				var contractA = $('input[name=contract_address]').val();
         				var amount = $('input[name=redeemAmount]').val();
-        				amount = amount*10**18;
+        				amount = web3.utils.toWei(amount.toString(),'ether');
         				var contract = new web3.eth.Contract(abi,contractA);
         				new Promise((resolve,reject)=>{
         					contract.methods.redeem(amount.toString()).send({
